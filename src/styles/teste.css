@@ -419,3 +419,60 @@ footer {
     font-size: 16px;
     cursor: pointer;
 }
+
+
+
+@media (min-width: 425px) {
+    
+    /* Reduz o padding do botão no cabeçalho */
+    #header__button {
+        padding: 10px;
+    }
+
+    /* Reorganiza os elementos principais em uma única coluna */
+    .header__container, .banner, .about, .faq, .comments, footer,
+    .about__frame--left, .about__frame--right, .faq__frame--left, 
+    .faq__frame--right, .comments__item, .frame__10, .frame__11 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Posicionamento específico para o frame esquerdo da seção FAQ */
+    .faq__frame--left {
+        position: static;
+    }
+
+    /* Ajuste de largura para elementos interativos */
+    .banner__button, .email-form, .modal-button, .email-input, .submit-button {
+        width: clamp(50%, 90%, 100%);
+    }
+
+    /* Ajustes para itens de comentários e modal */
+    .comments__item, .modal-content, .modal-header, .modal-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .comments__item div, .comments__text, .comments__author, .comments p, .modal p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajustes adicionais para modal */
+    .modal {
+        padding-top: 20px;
+    }
+    .modal-content {
+        width: clamp(75%, 90%, 95%);
+        height: auto;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .close-button {
+        align-self: flex-end;
+    }
+}
+
+
+
+

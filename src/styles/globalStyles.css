@@ -1,22 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+/* Definição das variáveis de cores e fontes */
 :root {
-    --font-family-inter: 'Inter', sans-serif;
-    --font-size-large: 24px; /* Para uso geral em tamanhos grandes de texto */
-    --font-weight-semibold: 600; /* Semibold */
-    --line-height-tight: 24px; /* Para uso geral onde um espaçamento de linha apertado é necessário */
-    --font-size-title1: 28px; /* Para títulos principais ou destaque */
-    --font-weight-bold: 700; /* Bold */
-    --line-height-title1: 40px; /* Para títulos principais ou destaque */
+    --brand-1: #4C6EF5;
+    --brand-2: #3867F7;
+    --gray-1: #191C1F;
+    --gray-2: #212529;
+    --gray-3: #343A40;
+    --gray-4: #ADB5BD;
+    --gray-5: #CED4DA;
+    --gray-6: #EDF2FF;
+    --gray-7: #F8F9FA;
+    --text-color: var(--gray-1); /* Preto para texto padrão */
+    --background-color: #FFFFFF; /* Branco para fundo padrão */   
+    /* Variavel Fonte Titulos */
+    --title1-fontsize:42px;
+    --title1-fontweight:600;
+    --title1-lineheight:140%;
+    --title2-fontsize:28px;
+    --title2-fontweight:600;
+    --title2-lineheight:160%;
+    --title3-fontsize:26px;
+    --title3-fontweight:600;
+    --title3-lineheight:140%; 
+    --text1-fontsize:12px; 
+    --text1-fontweight:400;
+    --text1-lineheight:150%;
+    --text2-fontsize:18px; 
+    --text2-fontweight:400;
+    --text2-lineheight:150%;
+    --text3-fontsize:16px; 
+    --text3-fontweight:400;
+    --text3-lineheight:150%; 
+    --text4-fontsize:16px; 
+    --text4-fontweight:600;
+    --text4-lineheight:150%;  
 }
 
+/* Definição da fonte global */
 body {
-    max-width: 1256px;
-    /* margin: 0 auto;     
-    padding: 0; */
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
 }
 
-
-
-
+/* Reset para margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 
