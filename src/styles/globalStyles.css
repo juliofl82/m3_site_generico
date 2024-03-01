@@ -43,6 +43,10 @@
     --text4-lineheight:150%;  
 }
 
+/* Variavel responsiva */
+
+--title1-fontsize-responsive:clamp(38px, 5vw, 42px);
+
 /* Definição da fonte global */
 body {
     font-family: 'Inter', sans-serif;

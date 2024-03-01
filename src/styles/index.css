@@ -44,8 +44,8 @@
 }
 
 /* Título do Banner */
-.banner__title {
-    font-size: var(--title1-fontsize);
+.banner__title {    
+    font-size: clamp(32px, 5vw, 42px);
     font-weight: var(--title1-fontweight);
     line-height: var(--title1-lineheight);
     text-align: center;
@@ -253,7 +253,7 @@
     gap: 30px;
     justify-content: space-between;
     align-items: center;
-    padding right: 10px;
+    padding-right: 10px;
     margin-bottom: 20px;        
 }
 
