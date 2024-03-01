@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Definição das variáveis de cores e fontes */
 :root {
     --brand-1: #4C6EF5;
     --brand-2: #3867F7;
-    --gray-1: #191C1F;
+    --gray-1: rgba(25, 28, 31, 1);
     --gray-2: #212529;
-    --gray-3: #343A40;
+    --gray-3: rgba(33, 37, 41, 1);
     --gray-4: #ADB5BD;
     --gray-5: #CED4DA;
     --gray-6: #EDF2FF;
@@ -24,7 +29,7 @@
     --title3-fontsize:26px;
     --title3-fontweight:600;
     --title3-lineheight:140%; 
-    --text1-fontsize:12px; 
+    --text1-fontsize:20px; 
     --text1-fontweight:400;
     --text1-lineheight:150%;
     --text2-fontsize:18px; 
@@ -48,11 +53,7 @@ body {
 }
 
 /* Reset para margens e paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 
 

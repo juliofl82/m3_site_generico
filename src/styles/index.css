@@ -18,7 +18,7 @@
 
 #header__button {
     padding: 10px 20px;
-    border: none;
+    border: rgba(248, 249, 250, 1) 1px solid;
     border-radius: 5px;
     font-size: 16px;
     font-weight: 600;
@@ -29,7 +29,7 @@
 }
 
 #header__button:hover {
-    background-color: var(--brand-2);
+    /* background-color: var(--brand-2); */
 }
 
 /* Seção Banner */
@@ -40,7 +40,7 @@
     padding: 150px 20px;
     gap: 10px;
     background: var(--gray-3);
-    color: var(--gray-6);
+    color: var(--gray-6);    
 }
 
 /* Título do Banner */
@@ -53,6 +53,7 @@
     width: 100%;
     max-width: 1085px;
     margin: 0 auto;
+    padding-top: 30px;
 }
 
 .banner__title span {
@@ -69,6 +70,8 @@
     width: 100%;
     max-width: 770px;
     margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 50px;
 }
 
 /* Botão no Banner */
@@ -103,7 +106,7 @@
     align-items: center;
     gap: 16px;
     padding: 16px 20px;
-    background: var(--gray-2);
+    background: var(--gray-1);
 }
 
 /* Frames da seção About */
@@ -237,26 +240,32 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 35px;
+    gap: 35px;    
     width: 100%;
+    max-width: 620px;
+    padding-right: 23px;
 }
 
 .comments__item {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 75px;
+    gap: 30px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding right: 10px;
+    margin-bottom: 20px;        
 }
 
 .comments__author {
     font-size: var(--title3-fontsize);
     font-weight: var(--title3-fontweight);
     line-height: var(--title3-lineheight);
-    color: var(--gray-6);
+    color: var(--gray-6);    
+}
+
+.comments__item .comments__authorinfo p {
+    font-size: 12px;   
 }
 
 .comments__item div p {
@@ -294,6 +303,8 @@
     background-color: var(--brand-1);
     position: sticky;
     top: 110px;
+    max-width: 580px;
+    max-height: 443px;
 }
 
 .comments__title {
@@ -312,12 +323,16 @@
 /* Footer  */
 footer {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* padding: 20px 236px; */
+    display: flex;    
+    justify-content: center;    
+    align-items: center;    
     background: var(--gray-1);
-    justify-content: center;
+    height: 102px;
+}
+
+.footer__logo {
+    max-width: 30%;
+    max-height: 30%;    
 }
 
 /* Modal */
