@@ -241,7 +241,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 35px;    
-    width: 100%;
+    width: 50%;
     max-width: 620px;
     padding-right: 23px;
 }
@@ -299,12 +299,13 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 35px;
-    width: 100%;
+    width: 50%;
     background-color: var(--brand-1);
     position: sticky;
     top: 110px;
     max-width: 580px;
     max-height: 443px;
+    margin: 0 auto;
 }
 
 .comments__title {
@@ -371,16 +372,15 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100%;    
 }
 
 .modal-header h2 {
     color: #F8F9FA;
-    text-align: center;
-    margin: 0 auto;
+    text-align: center;     
     font-size: var(--title3-fontsize);
     font-weight: var(--title3-fontweight);
-    line-height: var(--title3-lineheight);
+    line-height: var(--title3-lineheight);    
 }
 
 .close-button {
@@ -431,23 +431,21 @@ footer {
 .email-form {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 14px 20px;
-    gap: 10px;
+    align-items: center;    
     width: 448px;
-    margin: 0 auto;
+    margin: 10px auto;    
 }
 
 .email-input {
     flex-grow: 1;
     height: 60px;
+    width: 100%;
     background: #191C1F;
     border: 1px solid #191C1F;
     color: #ADB5BD;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 20px;
-    margin-right: 10px;
+    padding: 14px ;    
 }
 
 .email-input::placeholder {
