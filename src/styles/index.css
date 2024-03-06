@@ -524,17 +524,18 @@ footer {
 
     /* Ajustes adicionais para modal */
     .modal {
-        display: flex;
+        /* display: flex;
         padding-top: 20px;                
         margin: 0 auto;
         /* border: red 2px solid; */
-        align-items: center;
-        justify-content: center;        
+        /* align-items: center; */
+        /* justify-content: center;        
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);   
         position: fixed;  
-        margin-top: 30px;           
+        margin-top: 30px;             */
+        
     }
 
     .modal-content {
@@ -544,6 +545,7 @@ footer {
         width: clamp(75%, 90%, 95%);          
         width: 100%;   
         margin: 0;   
+
     }
 
     .modal-footer {
