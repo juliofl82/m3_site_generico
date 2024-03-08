@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 36px;
+    padding: 5px 50px;
     position: fixed;
     width: 100%;
     height: 100px;
@@ -242,10 +242,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 35px;    
-    /* width: 60%; */
-    max-width: 600px;
-    padding-right: 23px;
+    gap: 35px;       
+    max-width: 730px;
+    padding-right: 23px;    
 }
 
 .comments__item {
@@ -255,7 +254,7 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
-    margin-bottom: 20px;        
+    margin-bottom: 20px;     
 }
 
 .comments__author {
@@ -282,11 +281,11 @@
     font-weight: var(--text1-fontweight);
     line-height: var(--text1-lineheight);
     text-align: justify;
-    color: var(--gray-5);    
+    color: var(--gray-5);       
 }
 
 .comments__text {    
-    width: 60%;
+    width: 60%;    
 }
 
 .frame__11 {
@@ -296,10 +295,11 @@
     gap: 10px;    
     background-color: var(--brand-1);
     position: sticky;
-    top: 110px;    
+    top: 110px;      
     max-height: 443px;    
     margin-left: 50px;    
-    max-width: 420px;
+    max-width: 520px;    
+    margin-left: 100px;    
 }
 
 .comments__title {
