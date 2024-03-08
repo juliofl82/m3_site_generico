@@ -229,8 +229,7 @@
     flex-direction: row;
     gap: 16px;
     background: var(--gray-3);
-    margin: 0 auto;
-    /* max-width: 1256px; */
+    margin: 0 auto;    
     width: 100%;
     padding: 22px 50px;
     position: relative;
@@ -339,8 +338,7 @@ footer {
     left: 0;
     top: 10px;
     width: 100%;
-    height: 100%;
-    /* overflow: auto; */
+    height: 100%;   
     background-color: rgba(0, 0, 0, 0.4);
     padding-top: 130px;
 }
@@ -529,8 +527,7 @@ footer {
         transform: translate(-50%, -50%);   
         position: fixed;  
         margin-top: 50px; 
-        width: 100%; 
-        /* max-width: 250px;        */
+        width: 100%;        
     }
 
     .modal-header {
@@ -546,8 +543,7 @@ footer {
         align-items: center;
         justify-content: center;
         align-content: space-between;         
-        padding-left: 50px;
-        /* margin-left: 20px;         */
+        padding-left: 50px;        
         border: 2px blue solid;
         max-width: 450px;
     }
