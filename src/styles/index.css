@@ -457,6 +457,142 @@ footer {
     cursor: pointer;
 }
 
+
+@media (width:768px) {
+
+    .faq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 50px;
+        gap: 16px;
+        background: var(--gray-3);
+        color: var(--gray-6);
+        position: relative;
+        width: 100%;
+        min-height: 1132px;
+        margin-top: 0px;
+    }
+
+    .faq__frame--left {
+        width: 100%;
+        padding-right: 28px;
+        position: static;
+        top: 110px;
+    }
+
+    .faq__frame--right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-left: auto;
+    }
+
+    #faq__button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        background-color: var(--brand-1);
+        color: white;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .comments {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        background: var(--gray-3);
+        margin: 0 auto;    
+        width: 100%;
+        padding: 22px 50px;
+        position: relative;
+        margin-top: 0px;
+    }
+
+    .comments__title{
+        align-self: center;
+    }
+
+    .frame__10 {
+        order: 2;
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    /* .comments__list {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .comments__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comments__authorinfo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;         
+        max-width: 765px;
+        width: 100%;
+    }
+    .comments__author{
+        padding-right: 15px;
+    }
+    .comments__text {
+        display: flex;
+        max-width: 765px;
+        width: 100%;
+    }
+
+    .frame__11 {
+        order: 1;
+        position: static;
+        width: 100%;        
+        max-width: 768px;
+    }
+
+    .modal {    
+        display: flex;   
+        justify-content: center; 
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 130px;          
+    }
+
+    .modal-content {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 10px 18px;
+        gap: 10px;
+        position: absolute;
+        max-width: 90%;
+        max-width: 575px;
+        height: 316px;        
+        background: #212529;
+        border: 2px solid #4C6EF5;
+        margin-top: 50px; 
+        left: calc(80px);   
+    }
+
+}
+
 @media (min-width: 425px) and (max-width: 767px) {
    
     /* Reorganiza os elementos principais em uma única coluna */
@@ -476,18 +612,31 @@ footer {
         flex-direction: column;
         width: 100%;
     }
+
+    .faq__item-title {
+        display: flex;
+        flex-direction: column;
+        justify-self: auto;
+        width: 100%;
+        
+    }
     
     .faq__frame--left {
         position: static;
     }
 
     .frame__10 {
-        order: 2;
+        order: 2;        
     }
 
     .frame__11 {
         order: 1;
         position: static;
+    }
+
+    #faq__button {
+        width: 100%;
+        max-width: 425px;
     }
 
     /* Ajuste de largura para elementos interativos */
@@ -519,15 +668,17 @@ footer {
 
     /* Ajustes adicionais para modal */
     .modal {
-        display: flex;        
+        display: flex;    
+        flex-direction: column;    
         align-items: center;
         justify-content: center;        
         top: 50%;
-        left: 50%;
+        left: 55%;
         transform: translate(-50%, -50%);   
         position: fixed;  
         margin-top: 50px; 
-        width: 100%;        
+        width: 95%;  
+        margin-left: 0;      
     }
 
     .modal-header {
@@ -567,12 +718,14 @@ footer {
     }
 
     .header__container {
-        justify-content: center;
+        display: flex;
+        justify-content: center; 
+        align-content: flex-start;       
     }
 
     .header__logo {
         margin: 0 auto;
-        justify-content: center;
+        justify-content: left;
     }
 
     .footer__logo {
@@ -594,5 +747,14 @@ footer {
 
     .submit-button{
         display: none;        
+    }
+
+    .comments__authorinfo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;         
+        max-width: 440px;
+        width: 100%;        
     }
 }
